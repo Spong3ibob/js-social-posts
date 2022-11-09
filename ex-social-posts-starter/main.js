@@ -46,6 +46,10 @@ const posts = [
     }
 ];
 
+function onclickbutton(){
+
+    this.classList.add("like-button--liked")
+}
 
 for(let i = 0; i < posts.length; i++){
     const post = posts[i];
@@ -85,3 +89,4 @@ for(let i = 0; i < posts.length; i++){
     document.getElementById("container").innerHTML += listItem;
 
 };
+const button = document.querySelector(".like-button").addEventListener("click", onclickbutton);
